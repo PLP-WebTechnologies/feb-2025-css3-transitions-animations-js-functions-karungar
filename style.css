@@ -1,0 +1,182 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #f39c12;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #c55bbf;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Itinerary Section */
+.itinerary {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.itinerary ol {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Guides Section */
+.guides .table-container {
+    overflow-x: auto;
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+/* Improved Guides Section */
+table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) {
+    background-color: #fff;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        display: block;
+        text-align: right;
+        padding: 0.5rem;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+/* Registration Form */
+.registration {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .itinerary ol {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) {
+    .itinerary ol {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

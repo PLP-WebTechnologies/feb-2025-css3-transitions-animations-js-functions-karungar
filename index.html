@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring 2025 Japan Tour | Sakura Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Hina+Mincho&family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="#"><span>SAKURA</span> TOURS</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#itinerary">Itinerary</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#register">Book Now</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Cherry Blossom Theme) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Spring 2025 Japan Tour</h1>
+            <p>Experience cherry blossoms, ancient temples & modern Tokyo</p>
+            <a href="#register" class="cta-button">Reserve Your Spot</a>
+            <figure>
+                <img src="https://images.pexels.com/photos/2235302/pexels-photo-2235302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                     alt="Pink cherry blossoms in Kyoto with traditional temple" 
+                     width="100%">
+                <figcaption>Photo by <a href="https://www.pexels.com/@username">Evgeny Tchebotarev</a> on Pexels</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Itinerary (Ordered List) -->
+    <section id="itinerary" class="itinerary">
+        <h2><i class="fas fa-map-marked-alt"></i> 7-Day Sakura Itinerary</h2>
+        <ol type="I">
+            <li>
+                <h3>Day 1: Tokyo Arrival</h3>
+                <p>Welcome dinner in Shibuya with skyline views</p>
+            </li>
+            <li>
+                <h3>Day 2: Kyoto Temples</h3>
+                <p>Kinkaku-ji Golden Pavilion & Philosopher's Path walk</p>
+            </li>
+            <li>
+                <h3>Day 3: Hiroshima & Miyajima</h3>
+                <p>Peace Memorial Park & floating torii gate</p>
+            </li>
+            <li>
+                <h3>Day 4: Osaka Food Tour</h3>
+                <p>Dotonbori street food & sake tasting</p>
+            </li>
+            <li>
+                <h3>Day 5: Nara Park</h3>
+                <p>Meet sacred deer & visit Todai-ji Temple</p>
+            </li>
+            <li>
+                <h3>Day 6: Hakone Onsen</h3>
+                <p>Hot springs with Mt. Fuji views</p>
+            </li>
+            <li>
+                <h3>Day 7: Tokyo Departure</h3>
+                <p>Last-minute shopping in Akihabara</p>
+            </li>
+        </ol>
+    </section>
+    <!-- Tour Guides (Table) -->
+<section id="guides" class="guides">
+    <h2><i class="fas fa-address-book"></i> Tour Guide Contacts</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Haruto Tanaka</td>
+                    <td>Sakura Tours HQ, 1-5-6 Shibuya, Tokyo</td>
+                    <td>+81 90-1234-5678</td>
+                    <td>haruto@sakuratours.jp</td>
+                </tr>
+                <tr>
+                    <td>Aiko Nakamura</td>
+                    <td>Kyoto Branch, 605-0074 Higashiyama, Kyoto</td>
+                    <td>+81 90-2345-6789</td>
+                    <td>aiko@sakuratours.jp</td>
+                </tr>
+                <tr>
+                    <td>Kenji Sato</td>
+                    <td>Osaka Office, 1-1 Namba, Chuo-ku, Osaka</td>
+                    <td>+81 90-3456-7890</td>
+                    <td>kenji@sakuratours.jp</td>
+                </tr>
+                <tr>
+                    <td>Yumi Kobayashi</td>
+                    <td>Hiroshima Desk, 1-2 Otemachi, Naka-ku, Hiroshima</td>
+                    <td>+81 90-4567-8901</td>
+                    <td>yumi@sakuratours.jp</td>
+                </tr>
+                <tr>
+                    <td>Takeshi Yamamoto</td>
+                    <td>Hakone Station, 1320-485 Gora, Hakone</td>
+                    <td>+81 90-5678-9012</td>
+                    <td>takeshi@sakuratours.jp</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+    <!-- Registration Form -->
+    <section id="register" class="registration">
+        <h2><i class="fas fa-edit"></i> Book Your Sakura Adventure</h2>
+        <form id="tourForm">
+            <fieldset>
+                <legend>Traveler Information</legend>
+                <div class="form-group">
+                    <label for="fullName">Full Name*</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g., Yamada Taro" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" 
+                       placeholder="Create password (min 8 characters)" 
+                       minlength="8" 
+                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+                       title="Must contain at least one uppercase, one lowercase, and one number"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password*</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" 
+                       placeholder="Re-enter your password" 
+                       required
+                       oninput="checkPasswordMatch()">
+                <small id="passwordError" style="color:red; display:none;">Passwords do not match!</small>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>Trip Details</legend>
+                <div class="form-group">
+                    <label for="tourDate">Preferred Dates*</label>
+                    <select id="tourDate" name="tourDate" required>
+                        <option value="" disabled selected>Select week</option>
+                        <option value="mar25">March 25 - April 1</option>
+                        <option value="apr1">April 1 - April 8 (Peak Bloom)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Room Type*</label>
+                    <div class="radio-group">
+                        <input type="radio" id="single" name="room" value="single" required>
+                        <label for="single">Single (+$300)</label>
+                        <input type="radio" id="double" name="room" value="double">
+                        <label for="double">Double</label>
+                        <input type="radio" id="ryokan" name="room" value="ryokan">
+                        <label for="ryokan">Traditional Ryokan (+$200)</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Optional Experiences</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="tea" name="addons" value="tea">
+                        <label for="tea">Kyoto Tea Ceremony ($50)</label>
+                        <input type="checkbox" id="kimono" name="addons" value="kimono">
+                        <label for="kimono">Kimono Rental ($75)</label>
+                        <input type="checkbox" id="bullet" name="addons" value="bullet">
+                        <label for="bullet">Bullet Train Green Car ($120)</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="cta-button"><i class="fas fa-paper-plane"></i> Confirm Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Sakura Tours Japan | <a href="#">Terms</a> | <a href="#">FAQ</a></p>
+        </div>
+    </footer>
+</body>
+</html>
