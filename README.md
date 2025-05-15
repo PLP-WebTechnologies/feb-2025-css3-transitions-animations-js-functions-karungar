@@ -1,20 +1,23 @@
-# CSS Layouts and Responsive Design
+# CSS3 Transitions, Animations, and Advanced JavaScript Functions
+
 ## Objectives
-* Implement Flexbox and Grid for layout design.
-* Make the webpage responsive using media queries.
-* Ensure proper alignment and spacing.
+
+Create smooth CSS transitions and animations.
+Use JavaScript functions for dynamic behavior.
+Implement local storage for data persistence.
 
 ## Instructions
-* use Flexbox or CSS Grid.
-* Add a navigation bar and structure the content.
-* Use media queries to adjust layout for mobile, tablet, and desktop.
+Add CSS animations to elements like buttons or images.
 
-## Note
-Include at least:
-* navigation bar
-* media queries
+>[!NOTE]
+> - Write a JavaScript function that:
+> - Stores and retrieves user preferences using localStorage.
+> - Implements an animation triggered by user actions.
+
 ## Tasks
-* Apply Flexbox or Grid for layout.
-* Make the page responsive.
-* Test across different screen sizes.
+
+Create a CSS animation.
+Store data in localStorage.
+Apply JavaScript to trigger animations.
+
 Happy Coding! 💻✨
